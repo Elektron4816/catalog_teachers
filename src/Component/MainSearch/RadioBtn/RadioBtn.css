@@ -1,0 +1,114 @@
+.classRadio {
+    --radio: #D7CEBD;
+    --radio-checked: #ee7a45;
+    --radio-size: 24px;
+    display: grid;
+    grid-template-columns: auto var(--radio-size);
+    align-items: center;
+    justify-content: flex-start;
+    margin-bottom: 7px;
+}
+
+.classRadio label {
+    cursor: pointer;
+    margin-bottom: 10px;
+    color: #000000;
+    font-size: 16px;
+    line-height: 15px;
+    font-family: "Gilroy-SemiBold";
+    width: max-content;
+}
+
+.classRadio input[type="radio"] {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    position: relative;
+    height: var(--radio-size);
+    width: var(--radio-size);
+    outline: none;
+    margin: 0 5px 10px 0;
+    cursor: pointer;
+    border: 1px solid var(--radio);
+    background: transparent;
+    border-radius: 50%;
+    display: grid;
+    justify-self: end;
+    justify-items: center;
+    align-items: center;
+    overflow: hidden;
+    transition: border 0.5s ease;
+}
+
+.classRadio input[type="radio"]:hover {
+    border: 1px solid #EE7A45;
+}
+
+.classRadio input[type="radio"]:checked:hover {
+    --radio-checked: #F9844F;
+}
+
+.classRadio input[type="radio"]::before,
+.classRadio input[type="radio"]::after {
+    content: "";
+    display: flex;
+    justify-self: center;
+    border-radius: 50%;
+}
+
+.classRadio input[type="radio"]::before {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: var(--background);
+    z-index: 1;
+    opacity: var(--opacity, 1);
+}
+
+.classRadio input[type="radio"]::after {
+    position: relative;
+    width: calc(100% / 2);
+    height: calc(100% / 2);
+    background: var(--radio-checked);
+    top: var(--y, 100%);
+    transition: top 0.5s cubic-bezier(0.48, 1.97, 0.5, 0.63);
+}
+
+.classRadio input[type="radio"]:checked {
+    --radio: var(--radio-checked);
+}
+
+.classRadio input[type="radio"]:checked::after {
+    --y: 0%;
+    animation: stretch-animate 0.3s ease-out 0.17s;
+}
+
+.classRadio input[type="radio"]:checked::before {
+    --opacity: 0;
+}
+
+.classRadio input[type="radio"]:checked~input[type="radio"]::after {
+    --y: -100%;
+}
+
+.classRadio input[type="radio"]:not(:checked)::before {
+    --opacity: 1;
+    transition: opacity 0s linear 0.5s;
+}
+
+@keyframes stretch-animate {
+    0% {
+        transform: scale(1, 1);
+    }
+
+    28% {
+        transform: scale(1.15, 0.85);
+    }
+
+    50% {
+        transform: scale(0.9, 1.1);
+    }
+
+    100% {
+        transform: scale(1, 1);
+    }
+}

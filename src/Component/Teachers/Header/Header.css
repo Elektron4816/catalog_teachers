@@ -1,0 +1,199 @@
+.header {
+    display: flex;
+    gap: 58px;
+    margin: 64px 0 37px 0;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.zoomIt {
+    padding-top: 24px;
+    padding-left: 20px;
+}
+
+.header-image-container {
+    max-width: 460px;
+    max-height: 460px;
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    aspect-ratio: 1/1;
+    border: 10px solid #9FC65F;
+    box-sizing: content-box;
+    border-radius: 1000px;
+    flex: 1;
+}
+
+.header-container {
+    max-width: 450px;
+}
+
+.header-title-text {
+    font-family: "Gilroy-Medium";
+    font-size: 80px;
+    line-height: 70px;
+    letter-spacing: -4px;
+}
+
+.header-title-item {
+    display: flex;
+    align-items: center;
+    gap: 7px;
+}
+
+.header-title-text {
+    margin-bottom: 32px;
+}
+
+.header-title-items {
+    margin-bottom: 49px;
+}
+
+.header-title-item {
+    margin-bottom: 8px;
+}
+
+.header-title-item>img {
+    max-width: 21px;
+    max-height: 21px;
+}
+
+.header-social {
+    display: flex;
+    gap: 43px;
+}
+
+.header-social-title {
+    font-size: 40px;
+    line-height: 49px;
+    color: #EE7A45;
+}
+
+.header-social-block {
+    display: flex;
+}
+
+.header-social-item>p {
+    margin-bottom: 10px;
+}
+
+.header-social-block {
+    margin-bottom: 10px;
+}
+
+.header-main-container {
+    display: flex;
+    flex-direction: column;
+    width: max-content;
+    margin: auto;
+}
+
+
+@media screen and (max-width: 1199px) {
+
+    .header-image-container {
+        max-width: 398px;
+        max-height: 398px;
+    }
+
+}
+
+@media screen and (max-width: 959px) {
+
+    .header-image-container {
+        max-width: 206px;
+        max-height: 206px;
+        align-self: flex-start;
+        margin-left: 0;
+    }
+
+    .header {
+        gap: 21px;
+    }
+
+    .header-container {
+        max-width: 380px;
+    }
+
+    .header-title-text {
+        font-size: 60px;
+        letter-spacing: -1.8px;
+        line-height: 53px;
+        color: #2B2B2B;
+    }
+
+    .header-title-item>p,
+    .header-social-item>p:last-child {
+        font-size: 18px;
+        line-height: 21px;
+    }
+}
+
+@media screen and (max-width: 639px) {
+
+    /* .zoomIt>.header-breadcrumbs {
+        width: 460px;
+    } */
+
+    .header-image-container {
+        min-width: 439px;
+        min-height: 439px;
+    }
+
+    .header-container {
+        max-width: 457px;
+    }
+
+    .header-title {
+        zoom: 1;
+    }
+
+    .header {
+        margin-top: 35px;
+        justify-content: center;
+    }
+
+    .header-main-container {
+        width: auto;
+    }
+
+    .zoomIt {
+        padding-left: 0;
+    }
+}
+
+
+@media screen and (max-width: 479px) {
+
+    .header-container {
+        max-width: 300px;
+        margin: auto;
+    }
+
+    .header-image-container {
+        min-width: 282px;
+        min-height: 282px;
+    }
+
+    .header-title-item>p,
+    .header-social-item>p:last-child {
+        font-size: 14px;
+        line-height: 16px;
+    }
+
+    .header-title-text {
+        font-size: 42px;
+        letter-spacing: -1.8px;
+        line-height: 37px;
+        text-size-adjust: auto;
+    }
+}
+
+
+@media screen and (max-width: 639px) {
+
+    .zoomIt>.header-breadcrumbs {
+        margin: auto;
+        width: 460px;
+    }
+}

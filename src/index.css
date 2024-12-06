@@ -1,0 +1,73 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+@font-face {
+  font-family: "Gilroy-Medium";
+  src:
+    url("./fonts/GilroyMedium/gilroy-medium.woff2") format("woff2"),
+    url("./fonts/GilroyMedium/gilroy-medium.eot") format("eot"),
+    url("./fonts/GilroyMedium/gilroy-medium.woff") format("woff"),
+    url("./fonts/GilroyMedium/gilroy-medium.ttf") format("truetype");
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: "Gilroy-Regular";
+  src:
+    url("./fonts/GilroyRegular/gilroy-regular.woff2") format("woff2"),
+    url("./fonts/GilroyRegular/gilroy-regular.eot") format("eot"),
+    url("./fonts/GilroyRegular/gilroy-regular.woff") format("woff"),
+    url("./fonts/GilroyRegular/gilroy-regular.ttf") format("truetype");
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "Gilroy-Bold";
+  src:
+    url("./fonts/GilroyBold/Gilroy-Bold.woff2") format("woff2"),
+    url("./fonts/GilroyBold/Gilroy-Bold.eot") format("eot"),
+    url("./fonts/GilroyBold/Gilroy-Bold.woff") format("woff"),
+    url("./fonts/GilroyBold/Gilroy-Bold.ttf") format("ttf");
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: "Gilroy-SemiBold";
+  src:
+    url("./fonts/GilroySemiBold/GilroySemibold.woff2") format("woff2"),
+    url("./fonts/GilroySemiBold/GilroySemiBold.eot") format("eot"),
+    url("./fonts/GilroySemiBold/GilroySemibold.woff") format("woff"),
+    url("./fonts/GilroySemiBold/GilroySemibold.ttf") format("ttf");
+  font-weight: 600;
+}
+
+body {
+  background-color: #FFFBF4;
+  text-size-adjust: auto;
+}
+
+p {
+  font-family: "Gilroy-SemiBold";
+  font-size: 20px;
+  line-height: 23px;
+  color: #1F1F1F;
+}
+
+h1 {
+  font-family: "Gilroy-SemiBold";
+}
+
+label {
+  cursor: pointer;
+  color: #000000;
+  font-size: 16px;
+  line-height: 15px;
+  font-family: "Gilroy-SemiBold";
+  width: max-content;
+}
+
+button {
+  font-family: "Gilroy-SemiBold";
+}

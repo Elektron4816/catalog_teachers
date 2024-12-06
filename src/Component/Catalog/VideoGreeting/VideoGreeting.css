@@ -1,0 +1,44 @@
+/* videoTeacher */
+
+.catalog-teacherVideo-container {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(32, 32, 32, 0.78);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow-y: scroll;
+}
+
+.catalog-teacherVideo-content {
+    height: 100%;
+    /* width: 100%; */
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.catalog-teacherVideo-content>video {
+    height: 100%;
+    width: 100%;
+    cursor: pointer;
+}
+
+
+.catalog-teacherVideo-close {
+    width: 32px;
+    height: 32px;
+    background-color: #FFFBF4;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    position: absolute;
+    top: 16px;
+    right: 16px;
+    z-index: 10;
+}
+
+/* videoTeacher */

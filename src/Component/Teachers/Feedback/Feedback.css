@@ -1,0 +1,209 @@
+.footer-client-feedback-title {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 32px;
+}
+
+.footer-client-feedback-title>p {
+    font-size: 40px;
+    line-height: 32px;
+    font-family: "Gilroy-Bold";
+}
+
+.footer-client-feedback-title-navigation {
+    display: flex;
+    gap: 8px;
+    cursor: pointer;
+}
+
+.footer-client-feedback-title-navigation>div {
+    background-color: #EE7A45;
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-client-feedback-title-navigation-right {
+    transform: rotate(180deg);
+}
+
+.footer-client-feedback {
+    width: 1170px;
+    margin: auto;
+}
+
+/* .footer-client-feedback-items {
+    width: 1160px;
+    margin: auto;
+} */
+
+/* .images-wrap > div {
+    margin: 20px;
+} */
+
+
+.footer-client-feedback-item {
+    min-width: 570px;
+    max-width: 570px;
+    padding: 32px;
+    border-radius: 32px;
+    background-color: #F6F0E5;
+    box-sizing: border-box;
+    height: 264px;
+}
+
+.footer-client-feedback-item-text {
+    -webkit-line-clamp: 6;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+.footer-client-feedback-item-name {
+    font-size: 20px;
+    line-height: 23px;
+    font-family: "Gilroy-Bold";
+    color: #1F1F1F;
+}
+
+.footer-client-feedback-item-lesson {
+    font-size: 14px;
+    line-height: 23px;
+    font-family: "Gilroy-Bold";
+    color: #949494;
+    margin-bottom: 16px;
+}
+
+.footer-client-feedback-item-text {
+    font-size: 16px;
+}
+
+/* .react-slideshow-container .default-nav {
+    width: 32px;
+    height: 32px;
+    background-color: #EE7A45;
+} */
+
+.footer-client-feedback-nextbutton {
+    right: 15px !important;
+}
+
+.footer-client-feedback-prevbutton {
+    left: 1075px !important;
+}
+
+.footer-client-feedbacks-button-container {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer-client-feedbacks-button {
+    background-color: #ee7a45;
+    border: none;
+    border-radius: 43px;
+    color: #FFFFFF;
+    cursor: pointer;
+    height: 45px;
+    line-height: 18.9px;
+    padding: 11px 20px 10px 20px;
+    font-size: 14px;
+}
+
+.lineHeigth {
+    height: 23px;
+}
+
+@media screen and (max-width: 1199px) {
+
+    .footer-client-feedback-prevbutton {
+        left: 855px !important;
+    }
+
+
+    .footer-client-feedback-item {
+        min-width: 460px;
+        max-width: 460px;
+    }
+
+    .footer-client-feedback {
+        width: 950px;
+    }
+}
+
+@media screen and (max-width: 959px) {
+
+    .footer-client-feedback-prevbutton {
+        left: 540px !important;
+    }
+
+    .footer-client-feedback {
+        min-width: 620px;
+        max-width: 620px;
+    }
+
+    .footer-client-feedback-item {
+        min-width: 100%;
+        max-width: 100%;
+    }
+
+    .footer-client-feedback-nextbutton {
+        right: 0 !important;
+    }
+
+}
+
+@media screen and (max-width: 639px) {
+    .footer-client-feedback-prevbutton {
+        left: 380px !important;
+    }
+
+    .footer-client-feedback {
+        min-width: 460px;
+        max-width: 460px;
+    }
+}
+
+@media screen and (max-width: 479px) {
+
+    .footer-client-feedback-item {
+        height: 215px;
+    }
+
+    .react-slideshow-container>button {
+        top: -75px !important;
+    }
+
+    .footer-client-feedback-prevbutton {
+        left: 220px !important;
+    }
+
+    .footer-client-feedback {
+        min-width: 300px;
+        max-width: 300px;
+    }
+
+    .footer-client-feedback-item-text {
+        font-size: 14px;
+        line-height: 16px;
+    }
+
+    .lineHeigth {
+        height: 16px;
+    }
+
+    .footer-client-feedback-item-lesson {
+        font-size: 12px;
+        line-height: 16px;
+    }
+
+    .footer-client-feedback-title>p {
+        font-size: 34px;
+        line-height: 30px;
+    }
+
+}

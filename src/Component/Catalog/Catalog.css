@@ -1,0 +1,372 @@
+.catalog-main {
+    padding: 32px 16px 35px 16px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.catalog-navbar {
+    margin: 18px 21px 49px 21px;
+    height: 50px;
+    /* background-color: #F5F0E7; */
+    padding: 8px 11px 8px 22px;
+    box-sizing: border-box;
+    border-radius: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.catalog-logo-container>img {
+    width: 160px;
+    height: 27px;
+    margin-bottom: 37px;
+}
+
+.catalog-navbar-navitems {
+    margin-left: 33px;
+    display: flex;
+    gap: 20px;
+}
+
+.catalog-navbar-navitem {
+    list-style-type: none;
+}
+
+.catalog-navbar-navitem>a {
+    text-decoration: none;
+    color: #000000;
+    font-family: "Gilroy-SemiBold";
+    font-size: 14px;
+    line-height: 17.15px;
+}
+
+.catalog-navbar-button {
+    display: flex;
+    gap: 4px;
+}
+
+.catalog-navbar-button>button {
+    /* width: 109px; */
+    height: 34px;
+    border-radius: 43px;
+    border: none;
+    font-family: "Gilroy-SemiBold";
+    font-size: 14px;
+    line-height: 18.9px;
+    padding: 0 8.5px;
+}
+
+.catalog-navbar-button>button:first-child {
+    background-color: #EE7A45;
+    color: #FFFFFF;
+}
+
+.catalog-navbar-button>button:last-child {
+    background-color: #FCE1D1;
+    border: 1px solid #EE7A45;
+    color: #EE7A45;
+}
+
+
+.catalog-main-header {
+    margin-bottom: 24px;
+}
+
+.catalog-main-header>p {
+    font-size: 50px;
+    line-height: 59.7px;
+    letter-spacing: -2px;
+    margin-bottom: 24px;
+    margin-top: 16px;
+}
+
+/* .catalog-main-search {
+    display: flex;
+    gap: 8px;
+}
+
+.catalog-main-search-filter {
+    padding: 8px 20px 7px 20px;
+    border-radius: 43px;
+    background-color: #F5F0E7;
+    display: flex;
+    cursor: pointer;
+
+}
+
+.catalog-main-search-filter>p {
+    font-size: 14px;
+    line-height: 18.9px;
+    color: #171717;
+    margin-right: 4px;
+} */
+
+.catalog-main-items {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px 16px;
+    width: 2056px;
+    /* justify-content: center; */
+}
+
+.catalog-main-item {
+    background-color: #F5F0E7;
+    display: flex;
+    flex-direction: column;
+    padding: 24px 16px;
+    border-radius: 24px;
+    width: 280px;
+    box-sizing: border-box;
+}
+
+.catalog-main-item-photo {
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    aspect-ratio: 1 / 1;
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: flex-end;
+    align-items: end;
+    margin-bottom: 24px;
+    cursor: pointer;
+}
+
+.catalog-main-item-photo-play {
+    width: 30px;
+    height: 30px;
+    background-color: #FFFBF4;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    right: 17px;
+    bottom: 2px;
+    cursor: pointer;
+}
+
+.catalog-main-item-photo-play>img {
+    width: 15px;
+    height: 15px;
+}
+
+.catalog-main-item>p {
+    font-size: 30px;
+    line-height: 26px;
+    letter-spacing: -1.2px;
+    margin-bottom: 8px;
+    max-width: 150px;
+}
+
+.catalog-main-item-about {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 4px 4px;
+    margin-bottom: 16px;
+}
+
+.catalog-main-item-about-text {
+    width: max-content;
+}
+
+.catalog-main-item-about-text>p {
+    font-size: 14px;
+    line-height: 18px;
+    color: #FFFFFF;
+    padding: 3px 11px;
+    border-radius: 30px;
+}
+
+.catalog-main-item-about-text>.pink {
+    background-color: #F2A6D6;
+}
+
+.catalog-main-item-about-text>.green {
+    background-color: #9FC65F;
+}
+
+.catalog-main-item-about-text>.blue {
+    background-color: #9FB5F9;
+}
+
+.catalog-main-item-lesson {
+    margin-bottom: 24px;
+}
+
+.catalog-main-item-lesson>p {
+    font-size: 16px;
+    line-height: 17px;
+}
+
+.catalog-main-item-lesson>p:first-child {
+    color: #A7A7A7;
+    margin-bottom: 4px;
+}
+
+.catalog-main-item-lesson>p:last-child {
+    height: 68px;
+}
+
+.teacherName {
+    font-family: "Gilroy-SemiBold";
+    width: 100%;
+    height: 40px;
+    padding: 11px 20px 10px 20px;
+    background-color: #EE7A45;
+    color: #FFFFFF;
+    font-size: 14px;
+    line-height: 18.9px;
+    border: none;
+    border-radius: 43px;
+    cursor: pointer;
+}
+
+.catalog-main-notfound {
+    width: 100%;
+    text-align: center;
+    margin-top: 80px;
+    display: none;
+}
+
+.catalog-main-notfound>h1 {
+    font-size: 30px;
+    line-height: 30px;
+    letter-spacing: -1.2px;
+    color: #313131;
+}
+
+.catalog-main-notfound>p {
+    font-size: 14px;
+    line-height: 18.9px;
+    color: #171717;
+}
+
+
+.dropdown-container {
+    display: flex;
+    /* position: relative; */
+}
+
+/* small-dropdown */
+.main-dropdown {
+    display: none;
+    width: 100%;
+    height: 100%;
+    background-color: #FFFBF4;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    padding: 12px 10px 12px 10px;
+    box-sizing: border-box;
+    overflow-y: scroll;
+}
+
+.main-dropdown>p {
+    margin-bottom: 15px;
+    font-size: 32px;
+    line-height: 39.2px;
+    letter-spacing: -1.3px;
+}
+
+.main-dropdown-close-container {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.main-dropdown-close-container {
+    cursor: pointer;
+}
+
+/* small-dropdown */
+
+
+.innerVideo {
+    width: max-content;
+    margin: auto;
+}
+
+@media screen and (max-width: 2088px) {
+
+    .catalog-main-items {
+        width: 1760px;
+    }
+}
+
+@media screen and (max-width: 1791px) {
+
+    .catalog-main-items {
+        width: 1464px;
+    }
+}
+
+@media screen and (max-width: 1500px) {
+
+    .catalog-main-items {
+        /* width: 1448px; */
+        width: 1168px;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+
+    .catalog-main-items {
+        width: 872px;
+    }
+
+}
+
+@media screen and (max-width: 920px) {
+
+    .catalog-main-items {
+        width: 576px;
+    }
+
+}
+
+
+@media screen and (max-width: 650px) {
+
+    .catalog-main-items {
+        width: 300px;
+    }
+
+    .catalog {
+        padding: 12px 10px;
+    }
+
+    .catalog-logo-container>img {
+        margin-bottom: 28px;
+    }
+
+    .catalog-main-header>p {
+        font-size: 32px;
+        line-height: 39.2px;
+        letter-spacing: -1.3px;
+        margin-bottom: 8px;
+        margin-top: 8px;
+    }
+
+
+    .catalog-main-search-filter>img {
+        width: 16px;
+        height: 16px;
+    }
+
+    .catalog-main-item {
+        width: 300px;
+    }
+
+    .catalog-main-item>p {
+        max-width: none;
+    }
+
+    .catalog-main-item>button {
+        width: 268px;
+    }
+}
